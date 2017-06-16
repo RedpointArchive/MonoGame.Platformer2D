@@ -96,8 +96,8 @@ namespace Platformer2D
             //So we have to catch the exception and throw it away
             try
             {
-                MediaPlayer.IsRepeating = true;
-                MediaPlayer.Play(Content.Load<Song>("Sounds/Music"));
+                Microsoft.Xna.Framework.Media.MediaPlayer.IsRepeating = true;
+                Microsoft.Xna.Framework.Media.MediaPlayer.Play(Content.Load<Song>("Sounds/Music"));
             }
             catch { }
 
