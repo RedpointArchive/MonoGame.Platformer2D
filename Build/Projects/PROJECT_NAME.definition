@@ -102,10 +102,6 @@
     </Content>
 
     <!-- Mac OS Files -->
-    <Compile Include="OSX\Properties\AssemblyInfo.cs">
-      <Platforms>MacOS</Platforms>
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
     <Content Include="OSX\monogameicon.png">
       <Platforms>MacOS</Platforms>
       <Link>monogameicon.png</Link>
