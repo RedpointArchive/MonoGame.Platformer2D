@@ -1,7 +1,7 @@
 ﻿using System;
 #if MONOMAC
-using MonoMac.AppKit;
-using MonoMac.Foundation;
+using AppKit;
+using Foundation;
 #elif IPHONE
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
@@ -32,7 +32,7 @@ namespace Platformer2D
 	{
 		private PlatformerGame game;
 
-		public override void FinishedLaunching (MonoMac.Foundation.NSObject notification)
+		public override void DidFinishLaunching(NSNotification notification)
 		{
 			game = new PlatformerGame();
 			game.Run();
