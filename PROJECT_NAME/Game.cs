@@ -64,7 +64,13 @@ namespace Platformer2D
 #if WINDOWS_PHONE
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 #endif
+#if MONOMAC || WINDOWS || LINUX
+            graphics.IsFullScreen = false;
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 480;
+#else
             graphics.IsFullScreen = true;
+#endif
 
             //graphics.PreferredBackBufferWidth = 800;
             //graphics.PreferredBackBufferHeight = 480;
